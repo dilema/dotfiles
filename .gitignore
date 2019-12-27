@@ -1,3 +1,6 @@
 # Ignore Apple Spotlight files
 .DS_Store
 
+# Ignore every none template file in the private directory
+!private/*.template
+
