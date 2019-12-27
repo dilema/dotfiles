@@ -1,0 +1,6 @@
+[user]
+	name = USERNAME
+	email = USER_EMAIL
+	signingkey = KEY_ID
+[commit]
+	gpgsign = true
