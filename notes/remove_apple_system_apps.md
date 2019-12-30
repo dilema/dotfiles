@@ -5,7 +5,7 @@ Helpful procedure if like me you don't want to have all those annoying
 applications from Apple. Unfortunately you will have to redo the process
 after every update since they will be installed again...
 
-Beware though that the command line use here might be harmful or not secure
+Beware though that the command lines used here might be harmful or not secure
 for your computer. I don't fully understand what every command
 imply, it just do what I want. So use it at your own risks.
 

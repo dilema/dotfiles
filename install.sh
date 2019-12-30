@@ -1,10 +1,10 @@
 #!/bin/bash
 
-DOTFILES_DIR="$( cd -P "$( dirname "$0" )" && pwd )"
+dot_dir="$( cd -P "$( dirname "$0" )" && pwd )"
 
-if [ ! -d "$DOTFILES_DIR/backup" ]
+if [ ! -d "$dot_dir/backup" ]
 then
-  mkdir "$DOTFILES_DIR/backup"
+  mkdir "$dot_dir/backup"
 fi
 
 
@@ -17,11 +17,11 @@ then
   mv "$HOME/.gitconfig" "$DOTFILES_DIR/backup/.gitconfig"
 fi
 
-if [ -e "$DOTFILES_DIR/private/.gitconfig" ]
+if [ -e "$dot_dir/private/.gitconfig" ]
 then
-  cat "$DOTFILES_DIR/private/.gitconfig" >> "$DOTFILES_DIR/.gitconfig"
+  cat "$dot_dir/private/.gitconfig" >> "$dot_dir/.gitconfig"
 fi
 
-ln -hfs "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+ln -hfs "$dot_dir/.gitconfig" "$HOME/.gitconfig"
 echo "Installation complete."
 
