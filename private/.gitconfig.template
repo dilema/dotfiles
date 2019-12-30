@@ -1,3 +1,5 @@
+# PRIVATE PARAMETERS
+# ==================
 [user]
 	name = USERNAME
 	email = USER_EMAIL

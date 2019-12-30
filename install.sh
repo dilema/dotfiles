@@ -17,5 +17,11 @@ then
   mv "$HOME/.gitconfig" "$DOTFILES_DIR/backup/.gitconfig"
 fi
 
+if [ -e "$DOTFILES_DIR/private/.gitconfig" ]
+then
+  cat "$DOTFILES_DIR/private/.gitconfig" >> "$DOTFILES_DIR/.gitconfig"
+fi
+
 ln -hfs "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+echo "Installation complete."
 
