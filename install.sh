@@ -2,6 +2,13 @@
 
 dot_dir="$( cd -P "$( dirname "$0" )" && pwd )"
 
+# Choose package manager based on OS
+if [ $OSTYPE == "darwin"* ]
+then
+  pack_man = "homebrew"
+fi
+
+# Create backup directory
 if [ ! -d "$dot_dir/backup" ]
 then
   mkdir "$dot_dir/backup"
