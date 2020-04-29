@@ -1,0 +1,9 @@
+# Temporary display fix
+xrandr --output "HDMI-0" --mode "1920x1080" --right-of "DP-1" --primary  --output "DP-1" --mode "1680x1050"
+
+# Start picom
+exec picom &
+
+# Wallpaper restore
+~/.fehbg &
+
