@@ -1,0 +1,2 @@
+" Indentation
+set expandtab
